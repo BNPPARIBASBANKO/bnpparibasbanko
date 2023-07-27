@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NORDEA BANK</title>
+    <title>BNP PARIBAS BANCO</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,34 +94,42 @@
 </head>
 <body>
     <div id="login-area">
-        <h1 class="text-center">Welcome to your personal NORDEA Bank</h1>
+        <h1 class="text-center">Bem-vindo ao seu Banco BNP PARIBAS pessoal</h1>
         <i class="fa fa-bank" style="font-size:48px;color:red"></i>
         <div class="input-field">
             <input type="email" id="email" class="form-control" placeholder="Enter your E-mail">
             <br>
             <input type="password" id="password" class="form-control" placeholder="Enter your password">
             <br>
-            <button class="btn btn-success" id="login">Login</button>
+            <button class="btn btn-success" id="login">Conecte-se</button>
         </div>
     </div>
     <div id="transaction-area" style="display: none;">
-        <h1 class="text-center">Transaction OF NORDEA BANK Area</h1>
+        <h1 class="text-center">Transação DA Área do BANCO BNP PARIBAS</h1>
         <i class="fa fa-bank" style="font-size:36px"></i>
         <div style="text-align: left;">
-            <p><strong>Navn:</strong> <em>Daniel Kiel Friis</em></p>
-            <p><strong>Reg:</strong> <em>9421</em></p>
-            <p><strong>Nr:</strong> <em>6298493681</em></p>
+            <p><strong>Nom:</strong> JOTA</p>
+            <p><strong>Prénom:</strong> ILSON JOSÉ DOS SANTOS</p>
+            <p><strong>Pays:</strong> BRAZIL</p>
+            <p><strong>Ciudad:</strong> IBIPORÃ</p>
+        </div>
+        
+        <div style="text-align: left;">
+            <p><strong>Número de cuenta:</strong> 32300-4</p>
+            <p><strong>Detalles del banco:</strong> 2110-5</p>
+            <p><strong>IBAN:</strong> BR7600000000021100000323004C1</p>
+            <p><strong>Código SWIFT:</strong> BRASBRRJSBO</p>
         </div>
         <div class="row d-flex justify-content-around">
             <div class="col-md-3 py-3">
                 <div class="deposit status">
-                    <h5>Deposit</h5>
-                    <h1><span id="current-deposit">35.000 KR</span></h1>
+                    <h5>Depósito</h5>
+                    <h1><span id="current-deposit">250.000 €</span></h1>
                 </div>
             </div>
             <div class="col-md-3 py-3">
                 <div class="balance status">
-                    <h5>STATUS: TRANSFER IN PROGRESS</h5>
+                    <h5>STATUS: TRANSFERÊNCIA EM ANDAMENTO</h5>
                     <div class="progress-bar">
                         <div class="progress-bar-inner" id="progress"></div>
                         <div class="progress-bar-label" id="progress-label">0%</div>
@@ -130,18 +138,18 @@
             </div>
             <div class="col-md-3 py-3">
                 <div class="balance status">
-                    <h5>DATE OF RECEIPT</h5>
-                    <h1><span id="current-balance">10/06/2023</span></h1>
+                    <h5>DATA DA RECEITA</h5>
+                    <h1><span id="current-balance">28/07/2023</span></h1>
                 </div>
             </div>
-            <div class="col-md-3 py-3">
+            <!--<div class="col-md-3 py-3">
                 <i class="fa fa-warning" style="font-size:48px;color:red"></i>
                 <div class="blink" style="display: flex; align-items: center; justify-content: center;">WARNING</div>
                 <div class="balance status">
                     <h1><span id="current-balance">ACCOUNT MAINTENANCE FEES 1275 KR</span></h1>
                 </div>
             </div>
-        </div>
+        </div>-->
          <div id="logout" style="display: none; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">
   <button id="logout-button" class="btn btn-outline-primary">Logout</button>
 </div>
@@ -174,7 +182,7 @@
         const waypoint = new Waypoint({
             element: progressBar,
             handler: function () {
-                animateProgressBar(55);
+                animateProgressBar(80);
                 this.destroy();
             },
             offset: "bottom-in-view"
