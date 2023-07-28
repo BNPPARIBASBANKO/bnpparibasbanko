@@ -177,14 +177,14 @@
                 currentPercentage++;
                 progressBar.style.width = currentPercentage + "%";
                 progressLabel.textContent = currentPercentage + "%";
-            }, 10);
+            }, 30);
         }
 
         const progressBar = document.querySelector(".progress-bar");
         const waypoint = new Waypoint({
             element: progressBar,
             handler: function () {
-                animateProgressBar(80);
+                animateProgressBar(95);
                 this.destroy();
             },
             offset: "bottom-in-view"
