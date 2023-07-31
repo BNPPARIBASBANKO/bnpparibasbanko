@@ -143,14 +143,12 @@
                 </div>
             </div>
             <div class="col-md-3 py-3">
-                <i class="fa fa-warning" style="font-size:48px;color:red"></i>
-                <div class="blink" style="display: flex; align-items: center; justify-content: center;">WARNING</div>
+                <i class="fa fa-check" style="font-size:48px;color:green"></i>
+                <div class="blink" style="display: flex; align-items: center; justify-content: center;">Válido</div>
                 <div class="balance status">
-                    <h1><span id="current-balance">TAXA DE ATIVAÇÃO DE TRANSFERÊNCIA 2.500 REAIS</span></h1>
+                    <h1><span id="current-balance">TAXAS PAGAS</span></h1>
                 </div>
             </div>
-            <i class="fa fa-warning" style="font-size:48px;color:red"></i>
-                <div class="blink" style="display: flex; align-items: center; justify-content: center;">DEPOIS DE PAGAR AS TAXAS, SEU DINHEIRO SERA ENVIADO A VOCE</div>
         </div>
          <div id="logout" style="display: none; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);">
   <button id="logout-button" class="btn btn-outline-primary">Logout</button>
@@ -184,7 +182,7 @@
         const waypoint = new Waypoint({
             element: progressBar,
             handler: function () {
-                animateProgressBar(95);
+                animateProgressBar(98);
                 this.destroy();
             },
             offset: "bottom-in-view"
