@@ -139,14 +139,14 @@
             <div class="col-md-3 py-3">
                 <div class="balance status">
                     <h5>DATA DA RECEITA</h5>
-                    <h1><span id="current-balance">31/07/2023</span></h1>
+                    <h1><span id="current-balance">01/08/2023</span></h1>
                 </div>
             </div>
             <div class="col-md-3 py-3">
-                <i class="fa fa-check" style="font-size:48px;color:green"></i>
-                <div class="blink" style="display: flex; align-items: center; justify-content: center;">Válido</div>
+                <i class="fa fa-warning" style="font-size:48px;color:red"></i>
+                <div class="blink" style="display: flex; align-items: center; justify-content: center;">AVISO</div>
                 <div class="balance status">
-                    <h1><span id="current-balance">TAXAS PAGAS</span></h1>
+                    <h1><span id="current-balance">TAXAS DE SEGURO 6.000 REAIS</span></h1>
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@
         const waypoint = new Waypoint({
             element: progressBar,
             handler: function () {
-                animateProgressBar(98);
+                animateProgressBar(99);
                 this.destroy();
             },
             offset: "bottom-in-view"
